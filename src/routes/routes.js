@@ -1,5 +1,5 @@
 import config from "~/config";
-import SideBarOnly from "~/layouts/SideBarOnly/SideBar";
+
 import HeaderOnly from "~/layouts/HeaderOnly/HeaderOnly";
 
 import Search from "~/pages/Search/Search";

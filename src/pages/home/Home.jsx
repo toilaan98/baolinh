@@ -1,6 +1,5 @@
 import { Fragment } from "react";
-import Table from "~/components/Table/Congno/Table";
-import Customer from "~/components/Table/Congtrinh/CongTrinh";
+
 import KhachHang from "~/components/Table/KhachHang/KhachHang";
 
 function Home() {

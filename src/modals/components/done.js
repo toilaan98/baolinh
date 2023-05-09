@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import Modal from "../Modal";
 import styles from "./done.module.scss";
 import classNames from "classnames/bind";
@@ -15,7 +14,7 @@ import {
     tableActions,
 } from "~/store";
 import { useDispatch, useSelector } from "react-redux";
-import { bulongImportSlice } from "~/store/slice/bulongImportSlice";
+
 const cx = classNames.bind(styles);
 const Done = () => {
     const dispatch = useDispatch();

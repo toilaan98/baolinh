@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
 let iniEntered = {
     tencongty: "",

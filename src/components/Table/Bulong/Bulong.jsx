@@ -1,23 +1,17 @@
-import { Fragment, useCallback, useEffect, useRef, useState } from "react";
-import { nanoid } from "@reduxjs/toolkit";
+import { Fragment, useEffect, useRef } from "react";
+
 import styles from "./Bulong.module.scss";
 import classNames from "classnames/bind";
 import Button from "~/components/Button/Button";
-import {
-    bulongImportActions,
-    counterActions,
-    isClickActions,
-    tableActions,
-} from "~/store";
+import { bulongImportActions, counterActions, isClickActions } from "~/store";
 import { useDispatch, useSelector } from "react-redux";
 import DecimalFormat, { RoundingMode } from "decimal-format";
 
-import Modal from "~/modals/Modal";
 import Done from "~/modals/components/done";
 import EditableRowBulong from "./EditableRowBulong";
 import ReadOnlyRowBulong from "./ReadOnlyRowBulong";
 import TotalBl from "./TotalBl";
-import { NavLink } from "react-router-dom";
+
 import NavbarBL from "./Components/NavbarBulong/NavbarBulong";
 import { DownloadTableExcel } from "react-export-table-to-excel";
 
@@ -37,8 +31,6 @@ function Bulong() {
     // hooks
 
     const bulongImportDB = useSelector((state) => state.counter.bulongImport);
-
-    const [totalAmount, setTotalAmount] = useState(0);
 
     useEffect(() => {
         const fetchDataCongno = async () => {
