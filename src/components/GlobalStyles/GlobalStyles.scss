@@ -1,0 +1,29 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Sen&family=Sora:wght@300;400;500;600;800&family=Tilt+Warp&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    // button color
+    --primary: #002b5b;
+    --danger: #d14d72;
+    --white: #ffff;
+    //text color
+
+    // default layout
+    --default-layout-with: 1110px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.25%;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}

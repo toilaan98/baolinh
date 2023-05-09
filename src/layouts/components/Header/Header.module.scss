@@ -1,0 +1,39 @@
+.wrapper {
+    height: 56px;
+    // padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    align-items: center;
+}
+
+.container {
+    // width: var(--default-layout-with);
+    width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: var(--ytcp-text-primary-inverse);
+}
+.action {
+    margin-right: 20px;
+}
+.outLine {
+    position: relative;
+    color: #6c9bcf;
+    margin: 0 10px 0 10px;
+}
+.outLine::after {
+    content: "";
+    position: absolute;
+    background-color: #6c9bcf;
+    width: 98%;
+    height: 4px;
+    border-radius: 999px;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.padding {
+    margin: 0 10px 0 10px;
+}

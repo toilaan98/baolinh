@@ -1,0 +1,85 @@
+.wrapper {
+    // overflow: scroll;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    width: 30px;
+    border: 1px solid black;
+    padding: 5px 0px;
+}
+thead {
+    background-color: #b8b5c5;
+    color: black;
+}
+th {
+    border-bottom: 12px;
+}
+td {
+    min-height: 100px;
+    height: 60px;
+    padding: 0 5px;
+}
+
+.together {
+    border-top: 2px solid black;
+    font-weight: 600;
+}
+
+.add-data {
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+input {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 19px;
+    color: #393646;
+}
+.total-amount {
+    font-size: large;
+    height: 80px;
+    margin-top: 200px;
+    color: var(--white);
+    background-color: #088395;
+}
+.custom-select {
+    width: 133px;
+    height: 40px;
+    border-radius: 50%;
+    // position: absolute;
+    // top: 81px;
+    // left: 350px;
+    display: inline-block;
+    // border: 2px solid rgb(84, 75, 6);
+    text-align: center;
+    background-color: #e9b227;
+}
+.custom-select select {
+    border-radius: 5px;
+    background-color: #e9b227;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+    border-bottom: 1px solid var(--white);
+}
+.custom-select select::after {
+}

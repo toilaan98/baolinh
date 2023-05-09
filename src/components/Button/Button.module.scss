@@ -1,0 +1,99 @@
+.wrapper {
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: var(--primary);
+    min-width: 100px;
+    + .wrapper {
+        margin-left: 18px;
+    }
+    &.disabled {
+        pointer-events: none;
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+    &:hover {
+        border-color: var(--primary);
+        background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.46),
+                rgba(0, 0, 0, 0.06)
+            ),
+            var(--primary);
+    }
+}
+
+// .wrapper .disabled {
+// }
+.outLine {
+    color: var(--primary);
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    // border-color: var(--primary);
+    // border-color: currentColor;
+    &:hover {
+        // border-color: var(--primary);
+        background-color: rgba(254, 44, 85, 0.06);
+        // var(--primary);
+    }
+}
+.smaller {
+    min-width: 77px;
+    padding: 4px 16px;
+}
+.large {
+    min-width: 160px;
+    padding: 13px 16px;
+}
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+.icon {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+.custom {
+    background-color: red;
+}
+.smallest {
+    min-width: 50px;
+    min-height: 30px;
+    padding: 0 0;
+    width: 20px;
+    font-size: 12px;
+    + .wrapper {
+        margin-left: 6px;
+    }
+}
+.dele {
+    background-color: var(--danger);
+    color: var(--white);
+
+    border-color: var(--danger);
+    &:hover {
+        border-color: var(--danger);
+        background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.06),
+                rgba(0, 0, 0, 0.06)
+            ),
+            var(--danger);
+    }
+}

@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    // width: 1110px;
+    display: flex;
+    // background-color: aqua;
+}
+.content {
+    width: 1800px;
+    overflow: hidden;
+    flex: 3;
+    flex-basis: 1e-9px;
+    overflow-y: auto;
+}
